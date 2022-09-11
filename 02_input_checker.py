@@ -5,7 +5,7 @@ def user_choice():
     while not valid:
 
         # sk user for choice and change response to lowercase
-        response = "File type (interger / text / image): ".lower()
+        response = input("File type (interger / text / image): ").lower()
 
         # If they choose "t" or "text", return "text"
         if response == "text" or response == "t":
