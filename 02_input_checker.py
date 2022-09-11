@@ -9,11 +9,11 @@ def user_choice():
 
         # If they choose "t" or "text", return "text"
         if response == "text" or response == "t":
-            return response
-        
+            return "text"
+
         else:
             # if response is not valid, output an error
-            print(" PLease choose a vslif file type!")
+            print(" PLease choose a valid file type!")
             print()
 
 
