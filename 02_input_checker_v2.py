@@ -1,16 +1,23 @@
 # checks user choice is 'integer', 'text' or 'image'
 def user_choice():
 
+    # List of valid responses
+    text_ok = ["text", "t", "txt"]
+    integer_ok = ["interger", "int", "#", "number"]
+    image_ok = ["image", "img", "pix", "picture", "pic"]
+
     valid = False 
     while not valid:
 
-        # sk user for choice and change response to lowercase
+        # ask user for choice and change response to lowercase
         response = input("File type (interger / text / image): ").lower()
 
-        # If they choose "t" or "text", return "text"
-        text_ok = []
-        if response == "text" or response == "t":
+        # CHecks for valid response and returns text, integer or image
+        if response in text_ok:
             return "text"
+
+        elif response in integer_ok:
+            return "integer"
 
         else:
             # if response is not valid, output an error
@@ -19,7 +26,9 @@ def user_choice():
 
 
 # Main routine goes here
-data_type = user_choice()
-print("You chose", data_type)
+keep_going = ""
+while keep_going == "":
+    data_type = user_choice()
+    print("You chose", data_type)
 
-print()
+    print()
