@@ -97,7 +97,7 @@ while keep_going == "":
 
     # For integers, ask for the integer (must be more than / equal to 0)
     if data_type =="integer":
-        var_integer = num_check("ENter an integer: ", 0)
+        var_integer = num_check("Enter an integer: ", 0)
 
     # For images, ask for width and height
     # (must be integers more than / equal to 1)
@@ -109,4 +109,4 @@ while keep_going == "":
 
 
     # For text, ask for a string
-    else:
+   
