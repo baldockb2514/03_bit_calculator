@@ -24,15 +24,15 @@ def user_choice():
             return "image"
 
         elif response == "i":
-            want_integer = input("Press <enter> for an integer or any key for image ")
-            if want_integer == "":
-                return "integer"
-            else:
+            want_image = input("Press <enter> for an image or any key for integer ")
+            if want_image == "":
                 return "image"
+            else:
+                return "integer"
 
         else:
             # if response is not valid, output an error
-            print(" PLease choose a valid file type!")
+            print(" Please choose a valid file type!")
             print()
 
 
