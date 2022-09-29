@@ -32,7 +32,6 @@ def image_bits():
      image_height = num_check("Image Height?: ", 1)
 
      # calc number of pixels (width x height)
-     print()
      num_pixels = image_width * image_height
 
      # calc number of bits (pixels x 24)
@@ -48,4 +47,3 @@ def image_bits():
 
 # Main routine goes here
 image_bits
-     
